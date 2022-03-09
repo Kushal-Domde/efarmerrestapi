@@ -1,3 +1,9 @@
 com/efarmer/restapi/EfarmerrestapiApplication.class
-com/efarmer/restapi/EfarmerController.class
+com/efarmer/restapi/util/SingletonConnection.class
+com/efarmer/restapi/dao/impl/EfarmerDAOImpl.class
+com/efarmer/restapi/dao/EfarmerDAO.class
+com/efarmer/restapi/controller/EfarmerController.class
 com/efarmer/restapi/ServletInitializer.class
+com/efarmer/restapi/service/impl/EfarmerServiceImpl.class
+com/efarmer/restapi/service/EfarmerService.class
+com/efarmer/restapi/vo/User.class
