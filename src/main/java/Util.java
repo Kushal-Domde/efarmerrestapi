@@ -5,9 +5,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 public class Util 
 {
-	public class SingletonConnection
-	{
-		
 		static Connection connection = null;
 		public static Connection getConnection() 
 		{
@@ -24,6 +21,7 @@ public class Util
 					//step4 execute query  
 					ResultSet rs=stmt.executeQuery("select * from users");  
 					while(rs.next())  
+					System.out.println("Database done");	
 					System.out.println(rs.getInt(1)+"  "+rs.getString(2)+"  "+rs.getString(3));  
 				}
 				return connection;
@@ -57,7 +55,7 @@ public class Util
 			}
 		}
 
-	}
+}
 
 	
-}
+
