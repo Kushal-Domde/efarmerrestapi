@@ -18,9 +18,9 @@ public class SingletonConnection
 			if(connection == null) 
 			{
 				System.out.println("in Connection try");
-				Class.forName("org.postgresql.Driver"); 
+				Class.forName("org.postgresql.Driver"); // loading postgrel driver to esteblish database connection.
 				connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/efarmer",
-			        "postgres", "root");
+			        "postgres", "root");//getConnection() method of DriverManager class is used to establish connection with the database.
 			}
 			return connection;
 		} 

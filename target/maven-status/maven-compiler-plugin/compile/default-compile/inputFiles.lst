@@ -3,6 +3,7 @@
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/util/SingletonConnection.java
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/vo/User.java
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/dao/EfarmerDAO.java
+/Users/apple/git/efarmerrestapi/src/main/java/Util.java
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/service/impl/EfarmerServiceImpl.java
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/service/EfarmerService.java
 /Users/apple/git/efarmerrestapi/src/main/java/com/efarmer/restapi/controller/EfarmerController.java
