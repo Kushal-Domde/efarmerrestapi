@@ -1,7 +1,6 @@
 package com.efarmer.restapi.controller;
 
 import java.sql.Connection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,13 +11,15 @@ import com.efarmer.restapi.util.SingletonConnection;
 import com.efarmer.restapi.vo.User;
 
 @RestController(value = "/")
-public class EfarmerController {
+public class EfarmerController 
+{
 	
 	@Autowired
 	private EfarmerService efarmerService;
 
 	@RequestMapping("/efarmer/{phone}")
-	public String testefarmer(@PathVariable("phone") String sms) {
+	public String testefarmer(@PathVariable("phone") String sms) 
+	{
 
 		System.out.println("SMS = " + sms);
 		Connection connection = SingletonConnection.getConnection();
@@ -28,7 +29,8 @@ public class EfarmerController {
 
 	@RequestMapping("/")
 
-	public String testefarmer1() {
+	public String testefarmer1() 
+	{
 
 		System.out.println("this is default page on / = ");
 		return "Goodbye from Spring Boot";
@@ -46,6 +48,6 @@ public class EfarmerController {
 		efarmerService.addUser(user);
 		System.out.println("Phone = " + sms+"firstname="+firstName+"last name="+lastName+"firmname="+firmName+"address="+address);
 		return "Goodbye from Spring Boot name = "+sms;
+
 	}
- 
 }
